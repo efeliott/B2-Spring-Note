@@ -1,7 +1,7 @@
 # Projet Spring Boot - Gestion des Notes
 
 ## Description
-Ce projet est une application Java Spring Boot pour la gestion des notes. Elle permet de :
+Ce projet est une application Java Spring pour la gestion des notes. Elle permet de :
 - Créer, modifier, supprimer et consulter des notes.
 - Gérer les auteurs et les catégories associés aux notes.
 - Tester les endpoints via un fichier Postman exporté.
@@ -30,7 +30,7 @@ cd <nom-du-repo>
 
 ### Étape 2 : Configurer PostgreSQL
 1. Créez une base de données PostgreSQL.
-2. Utilisez le script de création fourni dans `src/main/resources/create_database.sql` pour initialiser la base.
+2. Utilisez le script de création fourni dans `src/main/resources/script_bdd.sql` pour initialiser la base.
 3. Modifiez le fichier `src/main/resources/application.properties` pour configurer votre base de données PostgreSQL :
 
 ```properties
@@ -80,15 +80,15 @@ L'application sera disponible à l'adresse suivante : [http://localhost:8080](ht
    - Ils incluent un diagramme de cas d'utilisation et un diagramme de classe de la base de données.
 
 2. **Script de création de la base** :
-   - Le fichier SQL `create_database.sql` dans le même dossier initialise la base de données PostgreSQL avec les tables nécessaires.
+   - Le fichier SQL `script_bdd.txt` dans le même dossier initialise la base de données PostgreSQL avec les tables nécessaires.
 
 3. **Fichier Postman** :
-   - Un fichier JSON nommé `postman_collection.json` est fourni dans `src/main/resources/`.
+   - Un fichier JSON nommé `SPRING NOTE.postman_collection.json` est fourni dans `src/main/resources/`.
    - Importez ce fichier dans Postman pour tester directement les endpoints.
    - Instructions d'importation :
      1. Ouvrez Postman.
      2. Cliquez sur **Import**.
-     3. Sélectionnez le fichier `postman_collection.json`.
+     3. Sélectionnez le fichier `SPRING NOTE.postman_collection.json`.
 
 ---
 
