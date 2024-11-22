@@ -1,0 +1,25 @@
+-- Table Auteur
+CREATE TABLE auteur (
+    id SERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL
+);
+
+-- Table Categorie
+CREATE TABLE categorie (
+    id SERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL
+);
+
+-- Table Note
+CREATE TABLE note (
+    id SERIAL PRIMARY KEY,
+    titre VARCHAR(255) NOT NULL,
+    contenu TEXT NOT NULL,
+    date_creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    date_modification TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    auteur_id INTEGER NOT NULL,
+    categorie_id INTEGER,
+
+    CONSTRAINT fk_auteur FOREIGN KEY (auteur_id) REFERENCES auteur (id) ON DELETE CASCADE,
+    CONSTRAINT fk_categorie FOREIGN KEY (categorie_id) REFERENCES categorie (id) ON DELETE SET NULL
+);
