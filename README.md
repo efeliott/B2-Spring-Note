@@ -77,7 +77,7 @@ L'application sera disponible à l'adresse suivante : [http://localhost:8080](ht
 ## Informations supplémentaires pour le professeur
 1. **Diagrammes** :
    - Les diagrammes demandés se trouvent dans le dossier : `src/main/resources/`.
-   - Ils incluent un diagramme de cas d'utilisation et une description du projet.
+   - Ils incluent un diagramme de cas d'utilisation et un diagramme de classe de la base de données.
 
 2. **Script de création de la base** :
    - Le fichier SQL `create_database.sql` dans le même dossier initialise la base de données PostgreSQL avec les tables nécessaires.
